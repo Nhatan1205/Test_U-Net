@@ -41,10 +41,10 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f"Sử dụng thiết bị: {device}")
 
 # Đường dẫn đến thư mục chứa ảnh huấn luyện (JPEGImages)
-train_image_dir = r'D:\NCKH\BCCD_Dataset\BCCD\JPEGImages'
-train_mask_dir = r'D:\NCKH\BCCD_Dataset\masks\train'
-val_image_dir = r'D:\NCKH\BCCD_Dataset\BCCD\JPEGImages'
-val_mask_dir = r'D:\NCKH\BCCD_Dataset\masks\val'
+train_image_dir = r'D:\NCKH\TestUnet\BCCD\JPEGImages'
+train_mask_dir = r'D:\NCKH\TestUnet\masks\train'
+val_image_dir = r'D:\NCKH\TestUnet\BCCD\JPEGImages'
+val_mask_dir = r'D:\NCKH\TestUnet\masks\val'
 
 # Định nghĩa các biến đổi dữ liệu
 transform = A.Compose([
